@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './LandingPage/Footer'; // Update the path to match your project structure
 
 function Layout({ children }) {
   const [theme, setTheme] = useState('light');
@@ -10,9 +11,12 @@ function Layout({ children }) {
   };
 
   return (
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div className={`min-h-screen flex flex-col ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       {/* Main Content */}
-      <main>{children}</main>
+      <main className="flex-grow">{children}</main>
+
+      {/* Footer */}
+      <Footer />
 
       {/* Dark/Light Mode Button */}
       <button

@@ -12,9 +12,6 @@ function Hero({ handleGetStartedClick }) {
           Nextly is a free landing page & marketing website template for startups and indie projects.
           It's built with Next.js & TailwindCSS. And it's completely open-source.
         </p>
-        <button onClick={handleGetStartedClick} className="px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-          Get Started
-        </button>
       </div>
       <div className="md:w-1/2 mt-10 md:mt-0">
         <img
